@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projekt 1">
+    <meta name="keywords" content="HTML5, CSS3, JavaScript">
+    <meta name="author" content="Oskar Piotrowski">
+    <link rel="stylesheet" href="../style.css">
+    <title>Grafika Rastrowa</title>
+</head>
+<body>
+    <div id="header">
+        <h1 id="title">Grafika Komputerowa</h1>
+    </div>
+
+    <div id="navbar">
+        <a class="navbtn" href="../index.html">Strona Główna</a>
+        <a class="navbtn" href="rastrowa.html">Grafika Rastrowa</a>
+        <a class="navbtn" href="wektorowa.html">Grafika Wektorowa</a>
+        <a class="navbtn" href="grafika3d.html">Grafika 3D</a>
+        <a class="navbtn" href="ruchoma.html">Grafika Ruchoma</a>
+    </div>
+
+    <div class="main-container">
+        <div id="subheader" class="glass-container">
+        <h2>Grafika Rastrowa</h2>
+    </div>
+
+    <div id="container" class="glass-container">
+        <h2 class="content">Czym jest grafika rastrowa?</h2>
+        <p class="content">
+            Grafika rastrowa to rodzaj grafiki komputerowej, który składa się z pikseli – pojedynczych, kwadratowych punktów o określonych kolorach tworzących obraz. Ten rodzaj grafiki jest najczęściej stosowany w fotografii cyfrowej, skanach i obrazach do wyświetlania na ekranach.
+        </p>
+
+        <h3 class="content">Przykłady grafiki rastrowej</h3>
+        <p class="content">
+            Poniżej znajdują się przykładowe obrazy w formacie rastrowym. Zwróć uwagę na to, że powiększając je, mogą być widoczne pojedyncze piksele:
+        </p>
+
+        <div style="display:flex; gap:15px; flex-wrap:wrap; justify-content:center; margin: 20px 0;">
+            <img src="../images/example1.jpg" alt="Przykład grafiki rastrowej 1" style="width:250px; border-radius:8px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+            <img src="../images/example2.jpg" alt="Przykład grafiki rastrowej 2" style="width:250px; border-radius:8px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+            <img src="../images/example3.jpg" alt="Przykład grafiki rastrowej 3" style="width:250px; border-radius:8px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+        </div>
+
+        <h3 class="content">Zalety grafiki rastrowej</h3>
+        <ul>
+            <li>Idealna do zdjęć i realistycznych obrazów.</li>
+            <li>Szeroko stosowana w Internecie i fotografii cyfrowej.</li>
+            <li>Łatwość edycji pojedynczych pikseli w programach takich jak Photoshop czy GIMP.</li>
+        </ul>
+
+        <h3 class="content">Wady grafiki rastrowej</h3>
+        <ul>
+            <li>Przy powiększaniu obraz może się rozmywać.</li>
+            <li>Pliki dużej rozdzielczości mogą zajmować dużo miejsca.</li>
+            <li>Nie nadaje się do skalowania w nieskończoność – w przeciwieństwie do grafiki wektorowej.</li>
+        </ul>
+
+        <h3 class="content">Pikselizacja i artefakty obrazu</h3>
+        <div class="pixelization-example">
+            <div class="text">
+                <p>
+                    <b>Pikselizacja</b> to efekt, który pojawia się, gdy powiększamy obraz rastrowy do momentu, w którym pojedyncze piksele stają się widoczne. <br><br>
+                    W grafice rastrowej mogą też występować <b>artefakty</b> – np. szumy, bloki kompresji, zniekształcenia kolorów lub nieostrości. 
+                    Artefakty najczęściej pojawiają się przy nadmiernym kompresowaniu lub powiększaniu obrazów poza ich naturalną rozdzielczość.
+                </p>
+            </div>
+            <div class="images">
+                <div class="image-block">
+                    <img src="../images/pikselizacja.jpg" alt="Przykład pikselizacji 1">
+                    <p class="caption">Pikselizacja przy powiększeniu obrazu</p>
+                </div>
+                <div class="image-block">
+                    <img src="../images/artefakty.jpg" alt="Przykład artefaktów 2">
+                    <p class="caption">Mocno skompresowana fotografia z widocznymi artefaktami</p>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="content">Popularne formaty rastrowe</h3>
+        <p class="content">
+            Do najczęściej używanych formatów grafiki rastrowej należą: <b>JPEG, PNG, GIF, BMP, TIFF, WebP</b>. Wybór formatu zależy od zastosowania, potrzeby kompresji i obsługi przez programy graficzne.
+        </p>
+        <br>
+
+        <table>
+            <thead>
+                <tr>
+                <th>Format</th>
+                <th>Kompresja</th>
+                <th>Przezroczystość</th>
+                <th>Warstwy</th>
+                <th>Animacja</th>
+                <th>Zastosowanie</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>JPEG/JPG</td><td>Stratna</td><td>❌</td><td>❌</td><td>❌</td><td>Fotografie, internet</td></tr>
+                <tr><td>PNG</td><td>Bezstratna</td><td>✅</td><td>❌</td><td>❌</td><td>Ikony, logotypy, ilustracje</td></tr>
+                <tr><td>GIF</td><td>Bezstratna</td><td>✅</td><td>❌</td><td>✅</td><td>Proste animacje, ikonki</td></tr>
+                <tr><td>BMP</td><td>Brak / RLE</td><td>❌</td><td>❌</td><td>❌</td><td>Edycja grafiki, MS Paint</td></tr>
+                <tr><td>TIFF</td><td>Stratna/Bezstratna</td><td>✅</td><td>✅</td><td>❌</td><td>Druk, archiwizacja</td></tr>
+                <tr><td>WebP</td><td>Stratna/Bezstratna</td><td>✅</td><td>❌</td><td>✅</td><td>Optymalizacja stron WWW</td></tr>
+                <tr><td>FLIF</td><td>Bezstratna</td><td>✅</td><td>❌</td><td>❌</td><td>Eksperymentalna kompresja</td></tr>
+                <tr><td>PSD</td><td>Bezstratna</td><td>✅</td><td>✅</td><td>❌</td><td>Adobe Photoshop</td></tr>
+                <tr><td>XCF</td><td>Bezstratna</td><td>✅</td><td>✅</td><td>❌</td><td>GIMP</td></tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
+
+    <div id="footer">
+        <p>2025 Oskar Piotrowski – Grafika komputerowa</p>
+    </div>
+</body>
+</html>
