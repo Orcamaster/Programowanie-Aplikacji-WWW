@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projekt 1.3">
+    <meta name="keywords" content="HTML5, CSS3, JavaScript">
+    <meta name="author" content="Oskar Piotrowski">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Grafika Wektorowa</title>
+    
+    <script src="../js/timedate.js" type="text/JavaScript"></script>
+</head>
+<body onload="startclock()">
+    <div id="header">
+        <h1 id="title">Grafika Komputerowa</h1>
+    </div>
+
+    <div id="navbar">
+        <a class="navbtn" href="../index.html">Strona Główna</a>
+        <a class="navbtn" href="rastrowa.html">Grafika Rastrowa</a>
+        <a class="navbtn" href="wektorowa.html">Grafika Wektorowa</a>
+        <a class="navbtn" href="grafika3d.html">Grafika 3D</a>
+        <a class="navbtn" href="ruchoma.html">Grafika Ruchoma</a>
+        <a class="navbtn" href="kolorujto.html">Skrypt</a>
+        <a class="navbtn" href="animacja.html">Animacja</a>
+    </div>
+
+    <div class="main-container">
+        <div id="subheader" class="glass-container">
+        <h2>Grafika Wektorowa</h2>
+    </div>
+
+    <div id="container" class="glass-container">
+        <h2 class="content">Czym jest grafika wektorowa?</h2>
+        <p class="content">
+            Grafika wektorowa opiera się na figurach geometrycznych, takich jak linie, krzywe, wielokąty i okręgi,
+            które są opisane matematycznie. W przeciwieństwie do grafiki rastrowej, nie składa się z pikseli,
+            dlatego można ją skalować w nieskończoność bez utraty jakości. Jest idealna do logotypów, ikon
+            i ilustracji.
+        </p>
+
+        <h3 class="content">Porównanie grafiki wektorowej z rastrową</h3>
+        <p class="content">
+            Po lewej znajduje się przykładowa ilustracja wektorowa. Można ją dowolnie powiększać lub zmniejszać,
+            zachowując ostrość i jakość krawędzi. Po prawej widać ilustrację rastrową w tym samym powiększeniu.
+        </p>
+
+        <div style="display:flex; gap:15px; flex-wrap:wrap; justify-content:center; margin: 20px 0;">
+            <img src="../img/wektor.jpg" alt="Przykład grafiki wektorowej 1" style="width:250px; border-radius:8px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+            <img src="../img/wektor2.jpg" alt="Przykład grafiki wektorowej 1" style="width:250px; border-radius:8px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+        </div>
+
+        <h3 class="content">Zalety grafiki wektorowej</h3>
+        <ul>
+            <li>Nie traci jakości przy skalowaniu – można powiększać w nieskończoność.</li>
+            <li>Pliki często zajmują mniej miejsca niż wysokiej jakości grafika rastrowa.</li>
+            <li>Łatwe w edycji i modyfikacji pod kątem kształtów, kolorów i rozmiarów.</li>
+            <li>Idealna do logotypów, ikon, wykresów i ilustracji.</li>
+        </ul>
+
+        <h3 class="content">Wady grafiki wektorowej</h3>
+        <ul>
+            <li>Nie nadaje się do realistycznych zdjęć i obrazów fotograficznych.</li>
+            <li>Tworzenie skomplikowanych ilustracji wymaga większej wiedzy i precyzji.</li>
+            <li>Nie wszystkie programy obsługują wszystkie formaty wektorowe.</li>
+        </ul>
+
+        <h3 class="content">Popularne formaty wektorowe</h3>
+        <p class="content">
+            Najczęściej używane formaty grafiki wektorowej to: <b>SVG, EPS, PDF, AI, CDR</b>.
+            Format SVG jest popularny w internecie i aplikacjach webowych, a AI czy CDR wykorzystywane są w profesjonalnym projektowaniu.
+        </p>
+        <br>
+
+        <table>
+            <thead>
+                <tr>
+                <th>Format</th>
+                <th>Kompresja</th>
+                <th>Przezroczystość</th>
+                <th>Warstwy</th>
+                <th>Animacja</th>
+                <th>Zastosowanie</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>SVG</td><td>Brak</td><td>✅</td><td>❌</td><td>✅</td><td>Ikony, wykresy, WWW</td></tr>
+                <tr><td>EPS</td><td>Brak</td><td>✅</td><td>❌</td><td>❌</td><td>Druk, ilustracje</td></tr>
+                <tr><td>PDF</td><td>Brak</td><td>✅</td><td>✅</td><td>❌</td><td>Dokumenty, grafika</td></tr>
+                <tr><td>AI</td><td>Brak</td><td>✅</td><td>✅</td><td>❌</td><td>Adobe Illustrator</td></tr>
+                <tr><td>CDR</td><td>Brak</td><td>✅</td><td>✅</td><td>❌</td><td>CorelDRAW</td></tr>
+                <tr><td>SWF</td><td>Stratna</td><td>✅</td><td>❌</td><td>✅</td><td>Adobe Flash, animacje</td></tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
+
+    <div id="footer">
+        <p>Oskar Piotrowski – Grafika komputerowa</p>
+        <div id="zegarek"></div>
+        <div id="data"></div>
+    </div>
+</body>
+</html>

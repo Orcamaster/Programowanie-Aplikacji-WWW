@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projekt 1.3">
+    <meta name="keywords" content="HTML5, CSS3, JavaScript">
+    <meta name="author" content="Oskar Piotrowski">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Skrypt</title>
+    
+    <script src="../js/timedate.js" type="text/JavaScript"></script>
+    <script src="../js/kolorujto.js" type="text/JavaScript"></script>
+
+    <style>
+        .colbtn {
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 8px;
+            height: 80px;
+            min-width: 100%;
+            cursor: pointer;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body style="background-image: none;" onload="startclock()">
+    <div id="header">
+        <h1 id="title">Grafika Komputerowa</h1>
+    </div>
+
+    <div id="navbar">
+        <a class="navbtn" href="../index.html">Strona Główna</a>
+        <a class="navbtn" href="rastrowa.html">Grafika Rastrowa</a>
+        <a class="navbtn" href="wektorowa.html">Grafika Wektorowa</a>
+        <a class="navbtn" href="grafika3d.html">Grafika 3D</a>
+        <a class="navbtn" href="ruchoma.html">Grafika Ruchoma</a>
+        <a class="navbtn" href="kolorujto.html">Skrypt</a>
+        <a class="navbtn" href="animacja.html">Animacja</a>
+    </div>
+
+    <div class="main-container">
+        <div id="subheader" class="glass-container">
+        <h2>Skrypt</h2>
+    </div>
+
+    <div id="container" class="glass-container">
+        <form style="text-align: center;" method="POST" name="background">
+            <input class="colbtn" type="button" value="Żółty" onclick="changeBackground('#FFF000')" style="color:black; background-color: #FFF000;">
+            <input class="colbtn" type="button" value="Czarny" onclick="changeBackground('#000000')" style="color: white; background-color: #000000;">
+            <input class="colbtn" type="button" value="Biały" onclick="changeBackground('#FFFFFF')" style="color: black; background-color: #FFFFFF;">
+            <input class="colbtn" type="button" value="Zielony" onclick="changeBackground('#00FF00')" style="color: white; background-color: #00FF00;">
+            <input class="colbtn" type="button" value="Niebieski" onclick="changeBackground('#0000FF')" style="color: white; background-color: #0000FF;">
+            <input class="colbtn" type="button" value="Pomarańczowy" onclick="changeBackground('#FF8000')" style="color: white; background-color: #FF8000;">
+            <input class="colbtn" type="button" value="Szary" onclick="changeBackground('#C0C0C0')" style="color: white; background-color: #C0C0C0;">
+            <input class="colbtn" type="button" value="Czerwony" onclick="changeBackground('#FF0000')" style="color: white; background-color: #FF0000;">
+            <input class="colbtn" type="button" value="Magenta" onclick="changeBackground('magenta')" style="color: white; background-color: magenta;">
+            <input class="colbtn" type="button" value="Purpurowy" onclick="changeBackground('purple')" style="color: white; background-color: purple;">
+        </form>
+    </div>
+
+    <div id="footer">
+        <p>Oskar Piotrowski – Grafika komputerowa</p>
+        <div id="zegarek"></div>
+        <div id="data"></div>
+    </div>
+</body>
+</html>

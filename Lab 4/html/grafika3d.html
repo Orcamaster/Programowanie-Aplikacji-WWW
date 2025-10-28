@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projekt 1.3">
+    <meta name="keywords" content="HTML5, CSS3, JavaScript">
+    <meta name="author" content="Oskar Piotrowski">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Grafika 3D</title>
+
+    <script src="../js/timedate.js" type="text/JavaScript"></script>
+</head>
+<body onload="startclock()">
+    <div id="header">
+        <h1 id="title">Grafika Komputerowa</h1>
+    </div>
+
+    <div id="navbar">
+        <a class="navbtn" href="../index.html">Strona Główna</a>
+        <a class="navbtn" href="rastrowa.html">Grafika Rastrowa</a>
+        <a class="navbtn" href="wektorowa.html">Grafika Wektorowa</a>
+        <a class="navbtn" href="grafika3d.html">Grafika 3D</a>
+        <a class="navbtn" href="ruchoma.html">Grafika Ruchoma</a>
+        <a class="navbtn" href="kolorujto.html">Skrypt</a>
+        <a class="navbtn" href="animacja.html">Animacja</a>
+    </div>
+
+    <div class="main-container">
+        <div id="subheader" class="glass-container">
+            <h2>Grafika 3D</h2>
+        </div>
+
+        <div id="container" class="glass-container">
+            <h2 class="content">Czym jest grafika 3D?</h2>
+            <p class="content">
+                Grafika 3D to rodzaj grafiki komputerowej, która pozwala tworzyć trójwymiarowe obiekty i sceny. Obiekty 3D mają szerokość, wysokość i głębokość, dzięki czemu można je obracać, powiększać, animować i renderować w realistyczny sposób. Grafika 3D wykorzystywana jest w filmach, grach, wizualizacjach architektonicznych i symulacjach.
+            </p>
+
+            <h3 class="content">Przykłady grafiki 3D</h3>
+            <div style="display:flex; gap:15px; flex-wrap:wrap; justify-content:center; margin: 20px 0;">
+                <div class="image-block">
+                    <img src="../img/3d1.jpg" alt="Przykład grafiki 3D 1">
+                    <p class="caption"><a style="color:#ddd" href="https://pixabay.com/illustrations/shaft-coffin-box-boards-bay-niche-2086978/" target="_blank">Link</a></p>
+                </div>
+                <div class="image-block">
+                    <img src="../img/3d2.jpg" alt="Przykład grafiki 3D 2">
+                    <p class="caption"><a style="color:#ddd" href="https://pixabay.com/illustrations/reflection-bullet-ball-mirrors-711926/" target="_blank">Link</a></p>
+                </div>
+                <div class="image-block">
+                    <img src="../img/3d3.jpg" alt="Przykład grafiki 3D 3">
+                    <p class="caption"><a style="color:#ddd" href="https://pixabay.com/illustrations/tiles-design-3d-pattern-graphic-5721151/" target="_blank">Link</a></p>
+                </div>
+            </div>
+
+            <h3 class="content">Proces tworzenia grafiki 3D</h3>
+            <p class="content">
+                Tworzenie grafiki 3D składa się z kilku etapów:
+            </p>
+            <ol>
+                <li><b>Modelowanie</b> – tworzenie siatki obiektu 3D.</li>
+                <li><b>Teksturowanie</b> – nakładanie kolorów i materiałów na obiekty.</li>
+                <li><b>Oświetlenie</b> – ustawianie źródeł światła w scenie.</li>
+                <li><b>Rendering</b> – generowanie finalnego obrazu 3D.</li>
+            </ol>
+
+            <h3 class="content">Zalety grafiki 3D</h3>
+            <ul>
+                <li>Realistyczne przedstawienie obiektów i scen.</li>
+                <li>Możliwość animacji i interakcji w czasie rzeczywistym.</li>
+                <li>Uniwersalność zastosowań – gry, filmy, architektura, medycyna.</li>
+            </ul>
+
+            <h3 class="content">Wady grafiki 3D</h3>
+            <ul>
+                <li>Wysokie wymagania sprzętowe do renderowania i animacji.</li>
+                <li>Tworzenie modeli 3D wymaga dużej wiedzy i czasu.</li>
+                <li>Pliki i projekty mogą zajmować dużo miejsca.</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div id="footer">
+        <p>Oskar Piotrowski – Grafika komputerowa</p>
+        <div id="zegarek"></div>
+        <div id="data"></div>
+    </div>
+</body>
+</html>
