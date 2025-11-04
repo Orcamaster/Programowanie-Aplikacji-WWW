@@ -1,0 +1,75 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<div class="main-container">
+        <div id="subheader" class="glass-container">
+        <h2>Skrypt</h2>
+    </div>
+
+    <div id="container" class="glass-container">
+        <form style="text-align: center;" method="POST" name="background">
+            <input class="colbtn" type="button" value="Żółty" onclick="changeBackground('#FFF000')" style="color:black; background-color: #FFF000;">
+            <input class="colbtn" type="button" value="Czarny" onclick="changeBackground('#000000')" style="color: white; background-color: #000000;">
+            <input class="colbtn" type="button" value="Biały" onclick="changeBackground('#FFFFFF')" style="color: black; background-color: #FFFFFF;">
+            <input class="colbtn" type="button" value="Zielony" onclick="changeBackground('#00FF00')" style="color: white; background-color: #00FF00;">
+            <input class="colbtn" type="button" value="Niebieski" onclick="changeBackground('#0000FF')" style="color: white; background-color: #0000FF;">
+            <input class="colbtn" type="button" value="Pomarańczowy" onclick="changeBackground('#FF8000')" style="color: white; background-color: #FF8000;">
+            <input class="colbtn" type="button" value="Szary" onclick="changeBackground('#C0C0C0')" style="color: white; background-color: #C0C0C0;">
+            <input class="colbtn" type="button" value="Czerwony" onclick="changeBackground('#FF0000')" style="color: white; background-color: #FF0000;">
+            <input class="colbtn" type="button" value="Magenta" onclick="changeBackground('magenta')" style="color: white; background-color: magenta;">
+            <input class="colbtn" type="button" value="Purpurowy" onclick="changeBackground('purple')" style="color: white; background-color: purple;">
+        </form>
+
+        <div id="animacjaTestowa1" class="test-block">
+        Kliknij, a się powiększę
+        </div>
+        <script>
+            $("#animacjaTestowa1").on("click", function(){
+                $(this).animate({
+                    width: "500px",
+                    opacity: 0.4,
+                    fontSize: "3em",
+                    borderwidth: "10px"
+                }, 1500);
+            });
+        </script>
+
+        <div id="animacjaTestowa2" class="test-block">
+            Najedź kursorem, a się powiększę
+        </div>
+        <script>
+            $("#animacjaTestowa2").on({
+                "mouseover" : function() {
+                    $(this).animate({
+                        width: 300
+                    },800);
+                },
+            
+                "mouseout" : function() {
+                    $(this).animate({
+                        width: 200
+                    }, 800);
+                }
+            });
+        </script>
+
+        <div id="animacjaTestowa3" class="test-block">
+            Klikaj, abym urósł
+        </div>
+
+        <script>
+            $("#animacjaTestowa3").on("click", function(){
+                if (!$(this).is(":animated")){
+                    $(this).animate({
+                        width: "+=" + 50,
+                        height: "+=" + 10,
+                        opacity: "-=" + 0.1,
+                        duration: 3000
+                    });
+                }
+            });
+                
+        </script>
+
+    </div>
+    
+
+    
