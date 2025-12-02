@@ -1,0 +1,83 @@
+<div class="main-container">
+    <div id="subheader" class="glass-container">
+        <h2>Grafika Rastrowa</h2>
+    </div>
+
+    <div id="container" class="glass-container">
+        <h2 class="content">Czym jest grafika rastrowa?</h2>
+        <p class="content">
+            Grafika rastrowa to rodzaj grafiki komputerowej, który składa się z pikseli – pojedynczych, kwadratowych punktów o określonych kolorach tworzących obraz. Ten rodzaj grafiki jest najczęściej stosowany w fotografii cyfrowej, skanach i obrazach do wyświetlania na ekranach.
+        </p>
+
+        <h3 class="content">Przykłady grafiki rastrowej</h3>
+        <p class="content">
+            Poniżej znajdują się przykładowe obrazy w formacie rastrowym. Zwróć uwagę na to, że powiększając je, mogą być widoczne pojedyncze piksele:
+        </p>
+
+        <div style="display:flex; gap:15px; flex-wrap:wrap; justify-content:center; margin: 20px 0;">
+            <img src="img/example1.jpg" alt="Przykład grafiki rastrowej 1" style="width:250px; border-radius:8px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+            <img src="img/example2.jpg" alt="Przykład grafiki rastrowej 2" style="width:250px; border-radius:8px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+            <img src="img/example3.jpg" alt="Przykład grafiki rastrowej 3" style="width:250px; border-radius:8px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+        </div>
+
+        <h3 class="content">Zalety grafiki rastrowej</h3>
+        <ul>
+            <li>Idealna do zdjęć i realistycznych obrazów.</li>
+            <li>Szeroko stosowana w Internecie i fotografii cyfrowej.</li>
+            <li>Łatwość edycji pojedynczych pikseli w programach takich jak Photoshop czy GIMP.</li>
+        </ul>
+
+        <h3 class="content">Wady grafiki rastrowej</h3>
+        <ul>
+            <li>Przy powiększaniu obraz może się rozmywać.</li>
+            <li>Pliki dużej rozdzielczości mogą zajmować dużo miejsca.</li>
+            <li>Nie nadaje się do skalowania w nieskończoność – w przeciwieństwie do grafiki wektorowej.</li>
+        </ul>
+
+        <h3 class="content">Pikselizacja i artefakty obrazu</h3>
+        <div class="pixelization-example">
+            <div class="text">
+                <p>
+                    <b>Pikselizacja</b> to efekt, który pojawia się, gdy powiększamy obraz rastrowy do momentu, w którym pojedyncze piksele stają się widoczne. <br><br>
+                    Mogą też występować <b>artefakty</b> – np. szumy, bloki kompresji, zniekształcenia kolorów lub nieostrości. Najczęściej wynikają z nadmiernej kompresji lub powiększania obrazu.
+                </p>
+            </div>
+            <div class="images">
+                <div class="image-block">
+                    <img src="img/pikselizacja.jpg" alt="Przykład pikselizacji 1">
+                    <p class="caption">Pikselizacja przy powiększeniu.</p>
+                </div>
+                <div class="image-block">
+                    <img src="img/artefakty.jpg" alt="Przykład artefaktów 2">
+                    <p class="caption">Artefakty wynikające z kompresji.</p>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="content">Popularne formaty rastrowe</h3>
+        <p class="content">
+            Do najczęściej używanych formatów grafiki rastrowej należą: <b>JPEG, PNG, GIF, BMP, TIFF, WebP</b>.
+        </p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Format</th>
+                    <th>Kompresja</th>
+                    <th>Przezroczystość</th>
+                    <th>Warstwy</th>
+                    <th>Animacja</th>
+                    <th>Zastosowanie</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>JPEG</td><td>Stratna</td><td>❌</td><td>❌</td><td>❌</td><td>Fotografie</td></tr>
+                <tr><td>PNG</td><td>Bezstratna</td><td>✅</td><td>❌</td><td>❌</td><td>Ikony, grafika WWW</td></tr>
+                <tr><td>GIF</td><td>Bezstratna</td><td>✅</td><td>❌</td><td>✅</td><td>Proste animacje</td></tr>
+                <tr><td>BMP</td><td>Brak</td><td>❌</td><td>❌</td><td>❌</td><td>Obróbka grafiki</td></tr>
+                <tr><td>TIFF</td><td>Stratna/Bezstratna</td><td>✅</td><td>✅</td><td>❌</td><td>Druk</td></tr>
+                <tr><td>WebP</td><td>Stratna/Bezstratna</td><td>✅</td><td>❌</td><td>✅</td><td>Strony WWW</td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
